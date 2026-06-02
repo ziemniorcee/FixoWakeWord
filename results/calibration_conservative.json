@@ -1,0 +1,13 @@
+{
+  "positive_real_clips": 99,
+  "negative_real_minutes": 10.0,
+  "minimum_requested_recall": 0.5,
+  "selected": {
+    "threshold": 0.775,
+    "required_hits": 4,
+    "streaming_recall": 0.5051,
+    "false_alarms": 12,
+    "false_alarms_per_hour": 72.0
+  },
+  "warning": null
+}

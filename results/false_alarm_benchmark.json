@@ -1,0 +1,809 @@
+{
+  "negative_audio_minutes": 7.834,
+  "folders": [
+    "normal_negative_ai"
+  ],
+  "silence_seconds_between_clips": 1.0,
+  "false_alarms": 199,
+  "false_alarms_per_hour": 1524.102,
+  "threshold": 0.8,
+  "required_hits": 2,
+  "detections": [
+    {
+      "timestamp": 3.0,
+      "probability": 0.9279
+    },
+    {
+      "timestamp": 5.5,
+      "probability": 0.9299
+    },
+    {
+      "timestamp": 8.0,
+      "probability": 0.9745
+    },
+    {
+      "timestamp": 10.25,
+      "probability": 0.9587
+    },
+    {
+      "timestamp": 12.5,
+      "probability": 0.9743
+    },
+    {
+      "timestamp": 15.25,
+      "probability": 0.9275
+    },
+    {
+      "timestamp": 17.25,
+      "probability": 0.965
+    },
+    {
+      "timestamp": 19.5,
+      "probability": 0.9567
+    },
+    {
+      "timestamp": 21.5,
+      "probability": 0.9797
+    },
+    {
+      "timestamp": 24.25,
+      "probability": 0.9406
+    },
+    {
+      "timestamp": 26.5,
+      "probability": 0.9625
+    },
+    {
+      "timestamp": 28.75,
+      "probability": 0.8892
+    },
+    {
+      "timestamp": 31.0,
+      "probability": 0.9639
+    },
+    {
+      "timestamp": 33.25,
+      "probability": 0.9725
+    },
+    {
+      "timestamp": 35.75,
+      "probability": 0.9784
+    },
+    {
+      "timestamp": 38.0,
+      "probability": 0.9756
+    },
+    {
+      "timestamp": 41.0,
+      "probability": 0.9592
+    },
+    {
+      "timestamp": 43.0,
+      "probability": 0.9648
+    },
+    {
+      "timestamp": 45.25,
+      "probability": 0.9616
+    },
+    {
+      "timestamp": 47.5,
+      "probability": 0.946
+    },
+    {
+      "timestamp": 49.75,
+      "probability": 0.9691
+    },
+    {
+      "timestamp": 52.25,
+      "probability": 0.9
+    },
+    {
+      "timestamp": 54.75,
+      "probability": 0.9732
+    },
+    {
+      "timestamp": 57.25,
+      "probability": 0.9743
+    },
+    {
+      "timestamp": 60.0,
+      "probability": 0.9779
+    },
+    {
+      "timestamp": 62.5,
+      "probability": 0.9546
+    },
+    {
+      "timestamp": 65.0,
+      "probability": 0.9598
+    },
+    {
+      "timestamp": 67.75,
+      "probability": 0.9306
+    },
+    {
+      "timestamp": 70.25,
+      "probability": 0.9525
+    },
+    {
+      "timestamp": 72.5,
+      "probability": 0.9196
+    },
+    {
+      "timestamp": 74.75,
+      "probability": 0.954
+    },
+    {
+      "timestamp": 77.0,
+      "probability": 0.9666
+    },
+    {
+      "timestamp": 79.25,
+      "probability": 0.9148
+    },
+    {
+      "timestamp": 81.5,
+      "probability": 0.9762
+    },
+    {
+      "timestamp": 83.75,
+      "probability": 0.9597
+    },
+    {
+      "timestamp": 86.25,
+      "probability": 0.9712
+    },
+    {
+      "timestamp": 88.75,
+      "probability": 0.9667
+    },
+    {
+      "timestamp": 91.0,
+      "probability": 0.986
+    },
+    {
+      "timestamp": 94.0,
+      "probability": 0.9404
+    },
+    {
+      "timestamp": 96.0,
+      "probability": 0.9635
+    },
+    {
+      "timestamp": 98.5,
+      "probability": 0.9339
+    },
+    {
+      "timestamp": 100.75,
+      "probability": 0.973
+    },
+    {
+      "timestamp": 103.25,
+      "probability": 0.9767
+    },
+    {
+      "timestamp": 105.5,
+      "probability": 0.844
+    },
+    {
+      "timestamp": 108.0,
+      "probability": 0.9793
+    },
+    {
+      "timestamp": 110.5,
+      "probability": 0.9667
+    },
+    {
+      "timestamp": 112.75,
+      "probability": 0.9611
+    },
+    {
+      "timestamp": 115.0,
+      "probability": 0.9662
+    },
+    {
+      "timestamp": 117.5,
+      "probability": 0.9764
+    },
+    {
+      "timestamp": 119.75,
+      "probability": 0.9654
+    },
+    {
+      "timestamp": 122.25,
+      "probability": 0.9586
+    },
+    {
+      "timestamp": 124.5,
+      "probability": 0.9721
+    },
+    {
+      "timestamp": 126.75,
+      "probability": 0.9565
+    },
+    {
+      "timestamp": 128.75,
+      "probability": 0.9665
+    },
+    {
+      "timestamp": 131.0,
+      "probability": 0.9575
+    },
+    {
+      "timestamp": 133.0,
+      "probability": 0.9527
+    },
+    {
+      "timestamp": 135.75,
+      "probability": 0.9457
+    },
+    {
+      "timestamp": 138.0,
+      "probability": 0.9722
+    },
+    {
+      "timestamp": 140.25,
+      "probability": 0.9502
+    },
+    {
+      "timestamp": 142.5,
+      "probability": 0.927
+    },
+    {
+      "timestamp": 145.0,
+      "probability": 0.9822
+    },
+    {
+      "timestamp": 148.5,
+      "probability": 0.9782
+    },
+    {
+      "timestamp": 151.0,
+      "probability": 0.9644
+    },
+    {
+      "timestamp": 154.25,
+      "probability": 0.9581
+    },
+    {
+      "timestamp": 156.75,
+      "probability": 0.9419
+    },
+    {
+      "timestamp": 159.0,
+      "probability": 0.9463
+    },
+    {
+      "timestamp": 161.5,
+      "probability": 0.9707
+    },
+    {
+      "timestamp": 163.75,
+      "probability": 0.9645
+    },
+    {
+      "timestamp": 166.0,
+      "probability": 0.9379
+    },
+    {
+      "timestamp": 168.25,
+      "probability": 0.9298
+    },
+    {
+      "timestamp": 170.25,
+      "probability": 0.9641
+    },
+    {
+      "timestamp": 172.5,
+      "probability": 0.9846
+    },
+    {
+      "timestamp": 174.75,
+      "probability": 0.9462
+    },
+    {
+      "timestamp": 177.25,
+      "probability": 0.936
+    },
+    {
+      "timestamp": 179.75,
+      "probability": 0.9472
+    },
+    {
+      "timestamp": 181.75,
+      "probability": 0.9842
+    },
+    {
+      "timestamp": 183.75,
+      "probability": 0.9453
+    },
+    {
+      "timestamp": 186.75,
+      "probability": 0.9481
+    },
+    {
+      "timestamp": 189.25,
+      "probability": 0.9117
+    },
+    {
+      "timestamp": 191.75,
+      "probability": 0.9518
+    },
+    {
+      "timestamp": 193.75,
+      "probability": 0.9721
+    },
+    {
+      "timestamp": 195.75,
+      "probability": 0.9738
+    },
+    {
+      "timestamp": 198.0,
+      "probability": 0.9592
+    },
+    {
+      "timestamp": 199.75,
+      "probability": 0.9549
+    },
+    {
+      "timestamp": 202.0,
+      "probability": 0.9714
+    },
+    {
+      "timestamp": 204.25,
+      "probability": 0.9071
+    },
+    {
+      "timestamp": 206.5,
+      "probability": 0.9493
+    },
+    {
+      "timestamp": 208.5,
+      "probability": 0.9433
+    },
+    {
+      "timestamp": 211.25,
+      "probability": 0.9733
+    },
+    {
+      "timestamp": 213.25,
+      "probability": 0.9797
+    },
+    {
+      "timestamp": 215.5,
+      "probability": 0.9819
+    },
+    {
+      "timestamp": 218.0,
+      "probability": 0.9388
+    },
+    {
+      "timestamp": 220.75,
+      "probability": 0.9749
+    },
+    {
+      "timestamp": 224.0,
+      "probability": 0.9077
+    },
+    {
+      "timestamp": 226.25,
+      "probability": 0.9533
+    },
+    {
+      "timestamp": 228.25,
+      "probability": 0.9673
+    },
+    {
+      "timestamp": 230.5,
+      "probability": 0.9663
+    },
+    {
+      "timestamp": 233.0,
+      "probability": 0.9312
+    },
+    {
+      "timestamp": 235.5,
+      "probability": 0.9616
+    },
+    {
+      "timestamp": 238.0,
+      "probability": 0.9702
+    },
+    {
+      "timestamp": 240.25,
+      "probability": 0.9628
+    },
+    {
+      "timestamp": 242.75,
+      "probability": 0.9294
+    },
+    {
+      "timestamp": 244.75,
+      "probability": 0.9616
+    },
+    {
+      "timestamp": 246.75,
+      "probability": 0.9666
+    },
+    {
+      "timestamp": 249.5,
+      "probability": 0.9139
+    },
+    {
+      "timestamp": 251.75,
+      "probability": 0.9806
+    },
+    {
+      "timestamp": 254.25,
+      "probability": 0.9519
+    },
+    {
+      "timestamp": 256.75,
+      "probability": 0.9715
+    },
+    {
+      "timestamp": 259.0,
+      "probability": 0.9471
+    },
+    {
+      "timestamp": 261.25,
+      "probability": 0.9703
+    },
+    {
+      "timestamp": 263.75,
+      "probability": 0.9139
+    },
+    {
+      "timestamp": 266.0,
+      "probability": 0.9788
+    },
+    {
+      "timestamp": 268.25,
+      "probability": 0.952
+    },
+    {
+      "timestamp": 270.5,
+      "probability": 0.9656
+    },
+    {
+      "timestamp": 272.5,
+      "probability": 0.9723
+    },
+    {
+      "timestamp": 275.25,
+      "probability": 0.9685
+    },
+    {
+      "timestamp": 277.75,
+      "probability": 0.9755
+    },
+    {
+      "timestamp": 280.0,
+      "probability": 0.9646
+    },
+    {
+      "timestamp": 282.25,
+      "probability": 0.9724
+    },
+    {
+      "timestamp": 284.5,
+      "probability": 0.9618
+    },
+    {
+      "timestamp": 287.0,
+      "probability": 0.9631
+    },
+    {
+      "timestamp": 290.0,
+      "probability": 0.9461
+    },
+    {
+      "timestamp": 292.0,
+      "probability": 0.9751
+    },
+    {
+      "timestamp": 294.25,
+      "probability": 0.9167
+    },
+    {
+      "timestamp": 296.5,
+      "probability": 0.9324
+    },
+    {
+      "timestamp": 299.0,
+      "probability": 0.9544
+    },
+    {
+      "timestamp": 301.25,
+      "probability": 0.9761
+    },
+    {
+      "timestamp": 303.75,
+      "probability": 0.9678
+    },
+    {
+      "timestamp": 306.25,
+      "probability": 0.9558
+    },
+    {
+      "timestamp": 308.5,
+      "probability": 0.9505
+    },
+    {
+      "timestamp": 310.75,
+      "probability": 0.9291
+    },
+    {
+      "timestamp": 313.75,
+      "probability": 0.929
+    },
+    {
+      "timestamp": 316.0,
+      "probability": 0.947
+    },
+    {
+      "timestamp": 318.5,
+      "probability": 0.9625
+    },
+    {
+      "timestamp": 320.5,
+      "probability": 0.9778
+    },
+    {
+      "timestamp": 322.75,
+      "probability": 0.9627
+    },
+    {
+      "timestamp": 325.0,
+      "probability": 0.9513
+    },
+    {
+      "timestamp": 327.0,
+      "probability": 0.8716
+    },
+    {
+      "timestamp": 329.25,
+      "probability": 0.973
+    },
+    {
+      "timestamp": 331.75,
+      "probability": 0.9802
+    },
+    {
+      "timestamp": 334.25,
+      "probability": 0.9815
+    },
+    {
+      "timestamp": 336.25,
+      "probability": 0.9572
+    },
+    {
+      "timestamp": 338.75,
+      "probability": 0.9363
+    },
+    {
+      "timestamp": 341.25,
+      "probability": 0.9715
+    },
+    {
+      "timestamp": 343.75,
+      "probability": 0.9381
+    },
+    {
+      "timestamp": 346.0,
+      "probability": 0.9365
+    },
+    {
+      "timestamp": 348.25,
+      "probability": 0.9456
+    },
+    {
+      "timestamp": 350.5,
+      "probability": 0.9771
+    },
+    {
+      "timestamp": 352.5,
+      "probability": 0.9549
+    },
+    {
+      "timestamp": 355.0,
+      "probability": 0.945
+    },
+    {
+      "timestamp": 357.25,
+      "probability": 0.9663
+    },
+    {
+      "timestamp": 359.75,
+      "probability": 0.9599
+    },
+    {
+      "timestamp": 361.75,
+      "probability": 0.9582
+    },
+    {
+      "timestamp": 364.0,
+      "probability": 0.9658
+    },
+    {
+      "timestamp": 366.5,
+      "probability": 0.9455
+    },
+    {
+      "timestamp": 369.0,
+      "probability": 0.9707
+    },
+    {
+      "timestamp": 371.25,
+      "probability": 0.9567
+    },
+    {
+      "timestamp": 373.5,
+      "probability": 0.9577
+    },
+    {
+      "timestamp": 375.75,
+      "probability": 0.9798
+    },
+    {
+      "timestamp": 378.0,
+      "probability": 0.8935
+    },
+    {
+      "timestamp": 380.75,
+      "probability": 0.9702
+    },
+    {
+      "timestamp": 383.25,
+      "probability": 0.9387
+    },
+    {
+      "timestamp": 385.0,
+      "probability": 0.9676
+    },
+    {
+      "timestamp": 388.5,
+      "probability": 0.9496
+    },
+    {
+      "timestamp": 390.25,
+      "probability": 0.9665
+    },
+    {
+      "timestamp": 393.0,
+      "probability": 0.9695
+    },
+    {
+      "timestamp": 395.75,
+      "probability": 0.939
+    },
+    {
+      "timestamp": 397.75,
+      "probability": 0.9539
+    },
+    {
+      "timestamp": 400.0,
+      "probability": 0.9755
+    },
+    {
+      "timestamp": 402.25,
+      "probability": 0.9564
+    },
+    {
+      "timestamp": 404.25,
+      "probability": 0.9734
+    },
+    {
+      "timestamp": 406.75,
+      "probability": 0.9654
+    },
+    {
+      "timestamp": 408.5,
+      "probability": 0.9779
+    },
+    {
+      "timestamp": 411.0,
+      "probability": 0.9073
+    },
+    {
+      "timestamp": 413.0,
+      "probability": 0.9774
+    },
+    {
+      "timestamp": 415.5,
+      "probability": 0.9599
+    },
+    {
+      "timestamp": 418.25,
+      "probability": 0.9701
+    },
+    {
+      "timestamp": 420.75,
+      "probability": 0.912
+    },
+    {
+      "timestamp": 423.0,
+      "probability": 0.9739
+    },
+    {
+      "timestamp": 425.25,
+      "probability": 0.9693
+    },
+    {
+      "timestamp": 427.5,
+      "probability": 0.9797
+    },
+    {
+      "timestamp": 430.0,
+      "probability": 0.9427
+    },
+    {
+      "timestamp": 432.5,
+      "probability": 0.951
+    },
+    {
+      "timestamp": 435.0,
+      "probability": 0.9761
+    },
+    {
+      "timestamp": 437.5,
+      "probability": 0.961
+    },
+    {
+      "timestamp": 439.75,
+      "probability": 0.9566
+    },
+    {
+      "timestamp": 442.25,
+      "probability": 0.9403
+    },
+    {
+      "timestamp": 444.25,
+      "probability": 0.9603
+    },
+    {
+      "timestamp": 446.5,
+      "probability": 0.9728
+    },
+    {
+      "timestamp": 448.5,
+      "probability": 0.9822
+    },
+    {
+      "timestamp": 450.75,
+      "probability": 0.9746
+    },
+    {
+      "timestamp": 453.5,
+      "probability": 0.9462
+    },
+    {
+      "timestamp": 455.75,
+      "probability": 0.9576
+    },
+    {
+      "timestamp": 457.5,
+      "probability": 0.9788
+    },
+    {
+      "timestamp": 459.5,
+      "probability": 0.9749
+    },
+    {
+      "timestamp": 462.0,
+      "probability": 0.9577
+    },
+    {
+      "timestamp": 464.25,
+      "probability": 0.9812
+    },
+    {
+      "timestamp": 466.5,
+      "probability": 0.9669
+    },
+    {
+      "timestamp": 468.75,
+      "probability": 0.9777
+    }
+  ]
+}

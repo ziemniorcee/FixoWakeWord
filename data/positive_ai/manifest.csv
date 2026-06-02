@@ -1,0 +1,301 @@
+path,label,kind,text,voice_id,voice_name,model_id,stability,similarity_boost,style,speed
+data\positive_ai\positive_00000.wav,1,positive,fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00001.wav,1,positive,Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00002.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00003.wav,1,positive,fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00004.wav,1,positive,Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00005.wav,1,positive,"Fikso, pomóż",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00006.wav,1,positive,Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00007.wav,1,positive,"Fikso, pokaż błąd",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00008.wav,1,positive,"Fikso, start",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00009.wav,1,positive,Fikso!,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00010.wav,1,positive,"Fikso, pokaż błąd",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00011.wav,1,positive,fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00012.wav,1,positive,Fikso!,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00013.wav,1,positive,"Fikso, pokaż błąd",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00014.wav,1,positive,"Fikso, pomóż",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00015.wav,1,positive,fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00016.wav,1,positive,"Fikso, pomóż",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00017.wav,1,positive,fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00018.wav,1,positive,fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00019.wav,1,positive,Hej Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00020.wav,1,positive,"Fikso, start",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00021.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00022.wav,1,positive,"Fikso, start",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00023.wav,1,positive,"Fikso, pomóż",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00024.wav,1,positive,Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00025.wav,1,positive,Fikso!,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00026.wav,1,positive,"Fikso, pokaż błąd",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00027.wav,1,positive,"Fikso, pokaż błąd",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00028.wav,1,positive,Hej Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00029.wav,1,positive,Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00030.wav,1,positive,"Fikso, start",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00031.wav,1,positive,"Fikso, start",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00032.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00033.wav,1,positive,"Fikso, start",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00034.wav,1,positive,"Fikso, pomóż",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00035.wav,1,positive,Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00036.wav,1,positive,fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00037.wav,1,positive,Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00038.wav,1,positive,"Fikso, pomóż",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00039.wav,1,positive,Hej Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00040.wav,1,positive,"Fikso, pomóż",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00041.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00042.wav,1,positive,fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00043.wav,1,positive,Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00044.wav,1,positive,"Fikso, start",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00045.wav,1,positive,"Fikso, pomóż",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00046.wav,1,positive,"Fikso, pokaż błąd",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00047.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00048.wav,1,positive,"Fikso, pomóż",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00049.wav,1,positive,fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00050.wav,1,positive,"Fikso, pokaż błąd",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00051.wav,1,positive,fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00052.wav,1,positive,fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00053.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00054.wav,1,positive,"Fikso, start",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00055.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00056.wav,1,positive,"Fikso, pomóż",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00057.wav,1,positive,Hej Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00058.wav,1,positive,"Fikso, pomóż",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00059.wav,1,positive,Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00060.wav,1,positive,Fikso!,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00061.wav,1,positive,"Fikso, pomóż",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00062.wav,1,positive,fikso,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00063.wav,1,positive,fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00064.wav,1,positive,fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00065.wav,1,positive,"Fikso, start",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00066.wav,1,positive,"Fikso, pomóż",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00067.wav,1,positive,Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00068.wav,1,positive,Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00069.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00070.wav,1,positive,Hej Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00071.wav,1,positive,"Fikso, pokaż błąd",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00072.wav,1,positive,fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00073.wav,1,positive,"Fikso, pokaż błąd",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00074.wav,1,positive,Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00075.wav,1,positive,Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00076.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00077.wav,1,positive,"Fikso, pokaż błąd",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00078.wav,1,positive,"Fikso, pokaż błąd",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00079.wav,1,positive,"Fikso, start",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00080.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00081.wav,1,positive,Hej Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00082.wav,1,positive,Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00083.wav,1,positive,Fikso,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00084.wav,1,positive,Hej Fikso,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00085.wav,1,positive,Fikso!,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00086.wav,1,positive,Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00087.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00088.wav,1,positive,"Fikso, start",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00089.wav,1,positive,fikso,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00090.wav,1,positive,fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00091.wav,1,positive,fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00092.wav,1,positive,Hej Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00093.wav,1,positive,"Fikso, pomóż",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00094.wav,1,positive,Hej Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00095.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00096.wav,1,positive,Fikso!,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00097.wav,1,positive,"Fikso, start",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00098.wav,1,positive,Fikso!,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00099.wav,1,positive,Hej Fikso,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00100.wav,1,positive,"Fikso, pomóż",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00101.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00102.wav,1,positive,Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00103.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00104.wav,1,positive,"Fikso, pomóż",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00105.wav,1,positive,"Fikso, start",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00106.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00107.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00108.wav,1,positive,Fikso!,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00109.wav,1,positive,Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00110.wav,1,positive,Fikso!,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00111.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00112.wav,1,positive,fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00113.wav,1,positive,"Fikso, pokaż błąd",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00114.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00115.wav,1,positive,"Fikso, pomóż",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00116.wav,1,positive,fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00117.wav,1,positive,"Fikso, pokaż błąd",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00118.wav,1,positive,Hej Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00119.wav,1,positive,Fikso!,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00120.wav,1,positive,Fikso!,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00121.wav,1,positive,"Fikso, start",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00122.wav,1,positive,"Fikso, pokaż błąd",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00123.wav,1,positive,Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00124.wav,1,positive,Hej Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00125.wav,1,positive,"Fikso, start",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00126.wav,1,positive,"Fikso, pokaż błąd",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00127.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00128.wav,1,positive,"Fikso, pokaż błąd",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00129.wav,1,positive,Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00130.wav,1,positive,Fikso!,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00131.wav,1,positive,Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00132.wav,1,positive,Hej Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00133.wav,1,positive,"Fikso, pokaż błąd",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00134.wav,1,positive,Fikso!,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00135.wav,1,positive,fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00136.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00137.wav,1,positive,fikso,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00138.wav,1,positive,"Fikso, start",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00139.wav,1,positive,"Fikso, pomóż",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00140.wav,1,positive,"Fikso, pomóż",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00141.wav,1,positive,fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00142.wav,1,positive,"Fikso, pomóż",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00143.wav,1,positive,Hej Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00144.wav,1,positive,"Fikso, pomóż",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00145.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00146.wav,1,positive,"Fikso, start",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00147.wav,1,positive,Hej Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00148.wav,1,positive,Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00149.wav,1,positive,"Fikso, start",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00150.wav,1,positive,Hej Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00151.wav,1,positive,Fikso!,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00152.wav,1,positive,"Fikso, pokaż błąd",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00153.wav,1,positive,Hej Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00154.wav,1,positive,"Fikso, pomóż",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00155.wav,1,positive,"Fikso, start",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00156.wav,1,positive,"Fikso, pomóż",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00157.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00158.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00159.wav,1,positive,fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00160.wav,1,positive,Hej Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00161.wav,1,positive,Hej Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00162.wav,1,positive,Hej Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00163.wav,1,positive,Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00164.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00165.wav,1,positive,Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00166.wav,1,positive,"Fikso, pomóż",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00167.wav,1,positive,Hej Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00168.wav,1,positive,"Fikso, start",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00169.wav,1,positive,"Fikso, pomóż",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00170.wav,1,positive,Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00171.wav,1,positive,Fikso!,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00172.wav,1,positive,"Fikso, pokaż błąd",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00173.wav,1,positive,Fikso!,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00174.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00175.wav,1,positive,Fikso!,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00176.wav,1,positive,"Fikso, pomóż",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00177.wav,1,positive,Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00178.wav,1,positive,"Fikso, start",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00179.wav,1,positive,fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00180.wav,1,positive,Fikso!,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00181.wav,1,positive,fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00182.wav,1,positive,Hej Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00183.wav,1,positive,Hej Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00184.wav,1,positive,Fikso!,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00185.wav,1,positive,"Fikso, pomóż",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00186.wav,1,positive,Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00187.wav,1,positive,Hej Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00188.wav,1,positive,Fikso!,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00189.wav,1,positive,"Fikso, pokaż błąd",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00190.wav,1,positive,"Fikso, pomóż",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00191.wav,1,positive,"Fikso, pomóż",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00192.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00193.wav,1,positive,"Fikso, pokaż błąd",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00194.wav,1,positive,fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00195.wav,1,positive,Fikso!,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00196.wav,1,positive,Fikso!,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00197.wav,1,positive,Fikso!,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00198.wav,1,positive,"Fikso, pokaż błąd",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00199.wav,1,positive,fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00200.wav,1,positive,Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00201.wav,1,positive,"Fikso, pokaż błąd",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00202.wav,1,positive,Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00203.wav,1,positive,Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00204.wav,1,positive,"Fikso, start",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00205.wav,1,positive,Hej Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00206.wav,1,positive,Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00207.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00208.wav,1,positive,Fikso!,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00209.wav,1,positive,"Fikso, start",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00210.wav,1,positive,"Fikso, pomóż",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00211.wav,1,positive,"Fikso, start",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00212.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00213.wav,1,positive,"Fikso, pomóż",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00214.wav,1,positive,fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00215.wav,1,positive,"Fikso, pokaż błąd",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00216.wav,1,positive,fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00217.wav,1,positive,"Fikso, start",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00218.wav,1,positive,Hej Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00219.wav,1,positive,"Fikso, pomóż",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00220.wav,1,positive,Hej Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00221.wav,1,positive,"Fikso, pokaż błąd",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00222.wav,1,positive,Fikso!,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00223.wav,1,positive,"Fikso, pokaż błąd",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00224.wav,1,positive,Fikso!,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00225.wav,1,positive,"Fikso, pokaż błąd",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00226.wav,1,positive,Hej Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00227.wav,1,positive,"Fikso, pokaż błąd",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00228.wav,1,positive,Fikso!,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00229.wav,1,positive,"Fikso, pomóż",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00230.wav,1,positive,Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00231.wav,1,positive,"Fikso, pomóż",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00232.wav,1,positive,"Fikso, start",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00233.wav,1,positive,"Fikso, pokaż błąd",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00234.wav,1,positive,Fikso!,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00235.wav,1,positive,"Fikso, start",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00236.wav,1,positive,"Fikso, start",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00237.wav,1,positive,"Fikso, pomóż",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00238.wav,1,positive,"Fikso, start",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00239.wav,1,positive,"Fikso, start",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00240.wav,1,positive,Fikso!,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00241.wav,1,positive,fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00242.wav,1,positive,fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00243.wav,1,positive,Fikso,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00244.wav,1,positive,"Fikso, start",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00245.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00246.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00247.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00248.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00249.wav,1,positive,"Fikso, pomóż",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00250.wav,1,positive,"Fikso, start",OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00251.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00252.wav,1,positive,Hej Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00253.wav,1,positive,Fikso!,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00254.wav,1,positive,Fikso!,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00255.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00256.wav,1,positive,Hej Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00257.wav,1,positive,Fikso,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00258.wav,1,positive,fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00259.wav,1,positive,"Fikso, pomóż",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00260.wav,1,positive,"Fikso, pokaż błąd",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00261.wav,1,positive,Hej Fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00262.wav,1,positive,Fikso!,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00263.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00264.wav,1,positive,Fikso!,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00265.wav,1,positive,Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00266.wav,1,positive,Fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00267.wav,1,positive,Hej Fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00268.wav,1,positive,fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00269.wav,1,positive,"Fikso, start",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00270.wav,1,positive,fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00271.wav,1,positive,"Fikso, pokaż błąd",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00272.wav,1,positive,fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00273.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00274.wav,1,positive,fikso,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00275.wav,1,positive,"Fikso, pomóż",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00276.wav,1,positive,fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00277.wav,1,positive,"Fikso, start",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00278.wav,1,positive,"Fikso, pomóż",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00279.wav,1,positive,fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00280.wav,1,positive,"Fikso, start",pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00281.wav,1,positive,fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00282.wav,1,positive,"Fikso, start",d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00283.wav,1,positive,"Fikso, pomóż",JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00284.wav,1,positive,Hej Fikso,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00285.wav,1,positive,Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00286.wav,1,positive,fikso,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00287.wav,1,positive,Hej Fikso,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00288.wav,1,positive,"Fikso, start",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00289.wav,1,positive,Fikso!,OOTZSkkPGHD1csczSCmT,polish_voice_3,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00290.wav,1,positive,Fikso!,ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00291.wav,1,positive,Hej Fikso,V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00292.wav,1,positive,Fikso!,g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\positive_ai\positive_00293.wav,1,positive,"Fikso, pokaż błąd",fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00294.wav,1,positive,"Fikso, start",V5GZ9rfeV9jjKZE5NkT7,polish_voice_1,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00295.wav,1,positive,fikso,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00296.wav,1,positive,"Fikso, pomóż",g8ZOdhoD9R6eYKPTjKbE,polish_voice_6,eleven_multilingual_v2,0.65,0.85,0.15,1.2
+data\positive_ai\positive_00297.wav,1,positive,"Fikso, pokaż błąd",ELipIT4gf7mqOUIdVqNN,polish_voice_8,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\positive_ai\positive_00298.wav,1,positive,Fikso!,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\positive_ai\positive_00299.wav,1,positive,Hej Fikso,JWUOwsYG4XgR9Od3eeon,polish_voice_5,eleven_multilingual_v2,0.65,0.85,0.15,1.2

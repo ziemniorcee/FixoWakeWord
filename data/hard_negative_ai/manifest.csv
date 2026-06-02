@@ -1,0 +1,6 @@
+path,label,kind,text,voice_id,voice_name,model_id,stability,similarity_boost,style,speed
+data\hard_negative_ai\hard_negative_00000.wav,0,hard_negative,fiks,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.55,0.8,0.1,1.1
+data\hard_negative_ai\hard_negative_00001.wav,0,hard_negative,fix,d4Z5Fvjohw3zxGpV8XUV,polish_voice_4,eleven_multilingual_v2,0.45,0.75,0.05,1.0
+data\hard_negative_ai\hard_negative_00002.wav,0,hard_negative,filtr,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\hard_negative_ai\hard_negative_00003.wav,0,hard_negative,fiks,pb8c0r30vHTjqkuyCUIQ,polish_voice_7,eleven_multilingual_v2,0.35,0.7,0.0,0.9
+data\hard_negative_ai\hard_negative_00004.wav,0,hard_negative,fix,fEfGdiGJK4l3imI70mtC,polish_voice_2,eleven_multilingual_v2,0.45,0.75,0.05,1.0

@@ -1,0 +1,109 @@
+{
+  "seed": 42,
+  "training_seconds": 179.8,
+  "files": {
+    "all": 1803,
+    "train": 3372,
+    "validation": 270,
+    "test": 270
+  },
+  "validation": {
+    "threshold": 0.18,
+    "accuracy": 0.9667,
+    "precision": 0.9406,
+    "recall": 0.9694,
+    "f1": 0.9548,
+    "tp": 95,
+    "fp": 6,
+    "fn": 3,
+    "tn": 166
+  },
+  "test": {
+    "threshold": 0.18,
+    "accuracy": 0.9444,
+    "precision": 0.9029,
+    "recall": 0.949,
+    "f1": 0.9254,
+    "tp": 93,
+    "fp": 10,
+    "fn": 5,
+    "tn": 162
+  },
+  "test_errors": [
+    {
+      "path": "data\\hard_negative_ai\\hard_negative_00037.wav",
+      "label": 0,
+      "probability": 0.2384
+    },
+    {
+      "path": "data\\hard_negative_ai\\hard_negative_00192.wav",
+      "label": 0,
+      "probability": 0.237
+    },
+    {
+      "path": "data\\hard_negative_ai\\hard_negative_00120.wav",
+      "label": 0,
+      "probability": 0.6759
+    },
+    {
+      "path": "data\\hard_negative_ai\\hard_negative_00158.wav",
+      "label": 0,
+      "probability": 0.2636
+    },
+    {
+      "path": "data\\hard_negative_ai\\hard_negative_00251.wav",
+      "label": 0,
+      "probability": 0.3029
+    },
+    {
+      "path": "data\\negative_real\\negative_real_0000_104.wav",
+      "label": 0,
+      "probability": 0.2033
+    },
+    {
+      "path": "data\\negative_real\\negative_real_0000_174.wav",
+      "label": 0,
+      "probability": 0.4168
+    },
+    {
+      "path": "data\\negative_real\\negative_real_0000_170.wav",
+      "label": 0,
+      "probability": 0.3368
+    },
+    {
+      "path": "data\\negative_real\\negative_real_0000_085.wav",
+      "label": 0,
+      "probability": 0.5473
+    },
+    {
+      "path": "data\\normal_negative_ai\\normal_negative_00129.wav",
+      "label": 0,
+      "probability": 0.1932
+    },
+    {
+      "path": "data\\positive_ai\\positive_00221.wav",
+      "label": 1,
+      "probability": 0.1493
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0142.wav",
+      "label": 1,
+      "probability": 0.0272
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0062.wav",
+      "label": 1,
+      "probability": 0.0374
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0145.wav",
+      "label": 1,
+      "probability": 0.0147
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0163.wav",
+      "label": 1,
+      "probability": 0.0722
+    }
+  ]
+}
