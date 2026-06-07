@@ -36,8 +36,9 @@ def main():
     model, checkpoint = load_checkpoint(args.checkpoint, args.device)
     positives = sorted((args.data_dir / "positive_real").glob("*.wav"))
     negatives = sorted((args.data_dir / "negative_real").glob("*.wav"))
+    negatives += sorted((args.data_dir / "hard_negative_real").glob("*.wav"))
     if not positives or not negatives:
-        raise SystemExit("Calibration requires WAV files in data/positive_real and data/negative_real")
+        raise SystemExit("Calibration requires WAV files in data/positive_real and at least one real negative folder")
 
     silence = np.zeros(model.config.sample_rate, dtype=np.float32)
     positive_scores = [
@@ -68,6 +69,7 @@ def main():
     torch.save(checkpoint, args.checkpoint)
     report = {
         "positive_real_clips": len(positives),
+        "negative_real_clips": len(negatives),
         "negative_real_minutes": round(negative_hours * 60.0, 3),
         "minimum_requested_recall": args.min_recall,
         "selected": best,

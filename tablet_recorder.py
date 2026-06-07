@@ -1,4 +1,4 @@
-"""Serve a USB-friendly tablet UI for collecting wake-word recordings."""
+﻿"""Serve a USB-friendly tablet UI for collecting wake-word recordings."""
 
 from __future__ import annotations
 
@@ -17,11 +17,13 @@ from urllib.parse import parse_qs, urlparse
 
 SAMPLE_RATE = 16_000
 NEGATIVE_CHUNK_SECONDS = 3
+HARD_NEGATIVE_CHUNK_SECONDS = 2
 MAX_UPLOAD_BYTES = 20 * 1024 * 1024
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FOLDERS = {
     "positive": BASE_DIR / "data/positive_real",
     "negative": BASE_DIR / "data/negative_real",
+    "hard_negative": BASE_DIR / "data/hard_negative_real",
 }
 INDEX_PATTERN = re.compile(r"_(\d{4})(?:_\d{3})?\.wav$")
 SAVE_LOCK = threading.Lock()
@@ -39,14 +41,18 @@ HTML = r"""<!doctype html>
     main { max-width: 680px; margin: auto; background: white; border-radius: 24px; padding: 24px; box-shadow: 0 8px 30px #0002; }
     h1 { margin: 0 0 8px; font-size: 30px; }
     p { color: #526070; }
-    .modes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+    .modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 20px 0; }
     button, input { font: inherit; }
     .mode { border: 2px solid #cad3df; background: white; border-radius: 14px; padding: 14px; font-weight: 700; }
     .mode.active { border-color: #235bd8; color: #235bd8; background: #eef4ff; }
+    .mode:disabled { opacity: 0.55; }
     label { display: block; margin: 12px 0; font-weight: 700; }
     input { width: 76px; margin-left: 8px; padding: 8px; border: 1px solid #cad3df; border-radius: 8px; }
     #record { width: 100%; min-height: 120px; border: 0; border-radius: 20px; background: #235bd8; color: white; font-size: 30px; font-weight: 800; margin-top: 16px; }
     #record.recording { background: #d62d3e; }
+    #progress { height: 14px; overflow: hidden; border-radius: 999px; background: #dfe6ef; margin: 16px 0 0; }
+    #progressBar { width: 0%; height: 100%; border-radius: inherit; background: #235bd8; transition: width linear; }
+    #progress.recording #progressBar { background: #d62d3e; }
     #status { min-height: 48px; padding: 12px; border-radius: 12px; background: #f5f7fa; font-weight: 650; }
     #stats { font-size: 18px; }
   </style>
@@ -54,40 +60,48 @@ HTML = r"""<!doctype html>
 <body>
 <main>
   <h1>Fikso sample recorder</h1>
-  <p>Nagrania z mikrofonu tabletu zapisują się od razu na komputerze.</p>
+  <p>Nagrania z mikrofonu tabletu zapisujÄ… siÄ™ od razu na komputerze.</p>
   <div class="modes">
     <button class="mode active" data-kind="positive">Fikso</button>
-    <button class="mode" data-kind="negative">Tło / negatywy</button>
+    <button class="mode" data-kind="negative">TĹ‚o / negatywy</button>
+    <button class="mode" data-kind="hard_negative">Trudne negatywy</button>
   </div>
   <label>Czas nagrania <input id="seconds" type="number" min="1" max="300" step="1" value="2"> s</label>
-  <p id="hint">Po starcie powiedz „Fikso”. Każde kliknięcie zapisuje jedną próbkę.</p>
+  <p id="hint">Kliknij start raz. Recorder bedzie robil kolejne dwusekundowe probki Fikso, az klikniesz stop.</p>
   <button id="record">Nagraj</button>
+  <div id="progress"><div id="progressBar"></div></div>
   <p id="status">Gotowe.</p>
   <p id="stats"></p>
 </main>
 <script>
 let kind = "positive";
 let recording = false;
+let stopRequested = false;
 const recordButton = document.querySelector("#record");
 const secondsInput = document.querySelector("#seconds");
 const statusBox = document.querySelector("#status");
 const statsBox = document.querySelector("#stats");
 const hint = document.querySelector("#hint");
+const progress = document.querySelector("#progress");
+const progressBar = document.querySelector("#progressBar");
+const modeButtons = Array.from(document.querySelectorAll(".mode"));
 
-document.querySelectorAll(".mode").forEach(button => button.onclick = () => {
+modeButtons.forEach(button => button.onclick = () => {
   if (recording) return;
   kind = button.dataset.kind;
-  document.querySelectorAll(".mode").forEach(b => b.classList.toggle("active", b === button));
-  secondsInput.value = kind === "positive" ? 2 : 60;
+  modeButtons.forEach(b => b.classList.toggle("active", b === button));
+  secondsInput.value = kind === "positive" || kind === "hard_negative" ? 2 : 60;
   hint.textContent = kind === "positive"
-    ? "Po starcie powiedz „Fikso”. Każde kliknięcie zapisuje jedną próbkę."
-    : "Nagraj zwykłą rozmowę lub dźwięki pomieszczenia, bez słowa „Fikso”. Serwer potnie nagranie na fragmenty.";
+    ? "Kliknij start raz. Recorder bedzie robil kolejne dwusekundowe probki Fikso, az klikniesz stop."
+    : kind === "hard_negative"
+      ? "Kliknij start raz. Recorder bedzie robil kolejne dwusekundowe trudne negatywy, az klikniesz stop."
+      : "Nagraj zwykla rozmowe lub dzwieki pomieszczenia bez slowa Fikso. Serwer potnie nagranie na fragmenty.";
 });
 
 async function refreshStats() {
   const response = await fetch("/api/stats");
   const stats = await response.json();
-  statsBox.textContent = `Zapisane: Fikso ${stats.positive}, negatywy ${stats.negative}`;
+  statsBox.textContent = `Zapisane: Fikso ${stats.positive}, negatywy ${stats.negative}, trudne ${stats.hard_negative}`;
 }
 
 function wavBlob(samples, sampleRate) {
@@ -133,28 +147,149 @@ async function capture(seconds) {
   return wavBlob(resample(joined, context.sampleRate), 16000);
 }
 
-recordButton.onclick = async () => {
-  if (recording) return;
-  recording = true;
-  recordButton.classList.add("recording");
-  recordButton.textContent = "Nagrywanie...";
-  const seconds = Math.max(1, Math.min(300, Number(secondsInput.value) || 2));
-  try {
-    statusBox.textContent = `Nagrywam przez ${seconds} s...`;
-    const blob = await capture(seconds);
-    statusBox.textContent = "Wysyłam na komputer...";
-    const response = await fetch(`/api/upload?kind=${kind}`, {method: "POST", headers: {"Content-Type": "audio/wav"}, body: blob});
-    const result = await response.json();
-    if (!response.ok) throw new Error(result.error || "Błąd zapisu");
-    statusBox.textContent = `Zapisano ${result.saved.length} plik(ów): ${result.saved.join(", ")}`;
-    await refreshStats();
-  } catch (error) {
-    statusBox.textContent = `Błąd: ${error.message}`;
-  } finally {
-    recording = false;
+class CaptureSession {
+  constructor() {
+    this.stream = null;
+    this.context = null;
+    this.source = null;
+    this.processor = null;
+    this.chunks = [];
+    this.collecting = false;
+  }
+  async start() {
+    this.stream = await navigator.mediaDevices.getUserMedia({audio: {channelCount: 1, echoCancellation: false, noiseSuppression: false, autoGainControl: false}});
+    this.context = new AudioContext();
+    this.source = this.context.createMediaStreamSource(this.stream);
+    this.processor = this.context.createScriptProcessor(4096, 1, 1);
+    this.processor.onaudioprocess = event => {
+      if (this.collecting) this.chunks.push(new Float32Array(event.inputBuffer.getChannelData(0)));
+    };
+    this.source.connect(this.processor);
+    this.processor.connect(this.context.destination);
+  }
+  async record(seconds) {
+    this.chunks = [];
+    this.collecting = true;
+    await new Promise(resolve => setTimeout(resolve, seconds * 1000));
+    this.collecting = false;
+    const joined = new Float32Array(this.chunks.reduce((size, chunk) => size + chunk.length, 0));
+    let offset = 0;
+    this.chunks.forEach(chunk => { joined.set(chunk, offset); offset += chunk.length; });
+    return wavBlob(resample(joined, this.context.sampleRate), 16000);
+  }
+  async stop() {
+    if (this.processor) this.processor.disconnect();
+    if (this.source) this.source.disconnect();
+    if (this.stream) this.stream.getTracks().forEach(track => track.stop());
+    if (this.context) await this.context.close();
+  }
+}
+
+function isSeriesMode() {
+  return kind === "positive" || kind === "hard_negative";
+}
+
+function setBusy(value) {
+  recording = value;
+  if (value) {
+    recordButton.classList.add("recording");
+    modeButtons.forEach(button => button.disabled = true);
+    secondsInput.disabled = isSeriesMode();
+  } else {
     recordButton.classList.remove("recording");
     recordButton.textContent = "Nagraj";
+    modeButtons.forEach(button => button.disabled = false);
+    secondsInput.disabled = false;
   }
+}
+
+function animateProgress(seconds) {
+  progress.classList.add("recording");
+  progressBar.style.transition = "none";
+  progressBar.style.width = "0%";
+  progressBar.offsetHeight;
+  progressBar.style.transition = `width ${seconds}s linear`;
+  progressBar.style.width = "100%";
+}
+
+function resetProgress() {
+  progress.classList.remove("recording");
+  progressBar.style.transition = "none";
+  progressBar.style.width = "0%";
+}
+
+async function upload(blob) {
+  const response = await fetch(`/api/upload?kind=${kind}`, {method: "POST", headers: {"Content-Type": "audio/wav"}, body: blob});
+  const result = await response.json();
+  if (!response.ok) throw new Error(result.error || "Blad zapisu");
+  return result.saved;
+}
+
+async function recordSingle() {
+  const seconds = Math.max(1, Math.min(300, Number(secondsInput.value) || 60));
+  setBusy(true);
+  recordButton.textContent = "Nagrywanie...";
+  try {
+    statusBox.textContent = `Nagrywam przez ${seconds} s...`;
+    animateProgress(seconds);
+    const blob = await capture(seconds);
+    resetProgress();
+    statusBox.textContent = "Wysylam na komputer...";
+    const saved = await upload(blob);
+    statusBox.textContent = `Zapisano ${saved.length} plikow: ${saved.join(", ")}`;
+    await refreshStats();
+  } catch (error) {
+    statusBox.textContent = `Blad: ${error.message}`;
+  } finally {
+    resetProgress();
+    setBusy(false);
+  }
+}
+
+async function recordSeries() {
+  const seconds = 2;
+  secondsInput.value = seconds;
+  setBusy(true);
+  stopRequested = false;
+  recordButton.textContent = "Stop";
+  let savedTotal = 0;
+  let sample = 1;
+  const session = new CaptureSession();
+  try {
+    await session.start();
+    while (!stopRequested) {
+      statusBox.textContent = `Probka ${sample}: nagrywam ${seconds} s...`;
+      animateProgress(seconds);
+      const blob = await session.record(seconds);
+      resetProgress();
+      statusBox.textContent = `Probka ${sample}: wysylam...`;
+      const saved = await upload(blob);
+      savedTotal += saved.length;
+      statusBox.textContent = `Zapisano ${savedTotal} plikow. Nastepna probka za chwile...`;
+      await refreshStats();
+      sample += 1;
+      await new Promise(resolve => setTimeout(resolve, 250));
+    }
+    statusBox.textContent = `Zatrzymano. Zapisano ${savedTotal} plikow z tej serii.`;
+  } catch (error) {
+    statusBox.textContent = `Blad: ${error.message}. Zapisano ${savedTotal} plikow przed bledem.`;
+  } finally {
+    await session.stop();
+    resetProgress();
+    stopRequested = false;
+    setBusy(false);
+  }
+}
+
+recordButton.onclick = async () => {
+  if (recording) {
+    stopRequested = true;
+    recordButton.textContent = "Zatrzymuje...";
+    statusBox.textContent = "Koncze biezaca dwusekundowa probke i zatrzymuje serie...";
+    return;
+  }
+  if (isSeriesMode()) await recordSeries();
+  else await recordSingle();
 };
 refreshStats();
 </script>
@@ -201,10 +336,12 @@ def save_upload(kind: str, body: bytes) -> list[str]:
             paths = [folder / f"positive_real_{index:04d}.wav"]
             chunks = [frames]
         else:
-            chunk_size = SAMPLE_RATE * NEGATIVE_CHUNK_SECONDS * 2
+            chunk_seconds = HARD_NEGATIVE_CHUNK_SECONDS if kind == "hard_negative" else NEGATIVE_CHUNK_SECONDS
+            chunk_size = SAMPLE_RATE * chunk_seconds * 2
             chunks = [frames[start : start + chunk_size] for start in range(0, len(frames), chunk_size)]
             chunks = [chunk for chunk in chunks if len(chunk) >= SAMPLE_RATE * 2]
-            paths = [folder / f"negative_real_{index:04d}_{chunk_index:03d}.wav" for chunk_index in range(len(chunks))]
+            prefix = "hard_negative_real" if kind == "hard_negative" else "negative_real"
+            paths = [folder / f"{prefix}_{index:04d}_{chunk_index:03d}.wav" for chunk_index in range(len(chunks))]
         for path, chunk in zip(paths, chunks):
             write_wav(path, chunk)
     return [path.name for path in paths]
@@ -240,7 +377,7 @@ class RecorderHandler(BaseHTTPRequestHandler):
             return
         content_length = int(self.headers.get("Content-Length", "0"))
         if content_length <= 0 or content_length > MAX_UPLOAD_BYTES:
-            self.send_json({"error": "Nieprawidłowy rozmiar nagrania"}, HTTPStatus.BAD_REQUEST)
+            self.send_json({"error": "NieprawidĹ‚owy rozmiar nagrania"}, HTTPStatus.BAD_REQUEST)
             return
         try:
             saved = save_upload(parse_qs(parsed.query).get("kind", [""])[0], self.rfile.read(content_length))
@@ -273,3 +410,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

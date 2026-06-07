@@ -10,6 +10,8 @@ $trainingRoot = $PSScriptRoot
 $clientRoot = [System.IO.Path]::GetFullPath($ClientPath)
 $clientWakeword = Join-Path $clientRoot "wakeword"
 $checkpoint = Join-Path $trainingRoot "checkpoints\fikso_cnn.pt"
+$trainingWakeword = Join-Path $trainingRoot "wakeword.py"
+$clientWakewordPy = Join-Path $clientWakeword "wakeword.py"
 $clientCheckpoint = Join-Path $clientWakeword "checkpoints\fikso_cnn.pt"
 $calibration = Join-Path $trainingRoot "results\calibration.json"
 $exporter = Join-Path $clientWakeword "export_android_model.py"
@@ -17,7 +19,7 @@ $typescriptModule = Join-Path $clientRoot "modules\wake-word\index.ts"
 $kotlinModule = Join-Path $clientRoot "modules\wake-word\android\src\main\java\expo\modules\wakeword\WakeWordModule.kt"
 $androidAsset = Join-Path $clientRoot "modules\wake-word\android\src\main\assets\fikso_cnn.bin"
 
-foreach ($requiredPath in @($exporter, $typescriptModule, $kotlinModule)) {
+foreach ($requiredPath in @($trainingWakeword, $exporter, $typescriptModule, $kotlinModule)) {
     if (-not (Test-Path $requiredPath)) {
         throw "Missing required file: $requiredPath"
     }
@@ -98,6 +100,7 @@ try {
     Write-Host "==> Copying checkpoint"
     New-Item -ItemType Directory -Path (Split-Path $clientCheckpoint) -Force | Out-Null
     Copy-Item $checkpoint $clientCheckpoint -Force
+    Copy-Item $trainingWakeword $clientWakewordPy -Force
 
     Write-Host "==> Exporting Android asset"
     Push-Location $clientWakeword
@@ -108,9 +111,18 @@ try {
     }
 
     Write-Host "==> Synchronizing detection settings"
-    Replace-Required $typescriptModule '(?m)^(\s*threshold\s*=\s*)[0-9.]+' ('${1}' + $thresholdText)
-    Replace-Required $typescriptModule '(?m)^(\s*requiredHits\s*=\s*)\d+' ('${1}' + $requiredHits)
-    Replace-Required $kotlinModule '(?m)^private const val MAX_STREAMING_THRESHOLD = [0-9.]+f$' 'private const val MAX_STREAMING_THRESHOLD = 1.0f'
+    Replace-Required $typescriptModule '\b(threshold\s*=\s*)[0-9.]+' ('${1}' + $thresholdText)
+    Replace-Required $typescriptModule '\b(requiredHits\s*=\s*)\d+' ('${1}' + $requiredHits)
+    Replace-Required $kotlinModule '(?m)^(private const val MAX_STREAMING_THRESHOLD\s*=\s*)[0-9.]+f' '${1}1.0f'
+    if (-not [regex]::IsMatch([System.IO.File]::ReadAllText($kotlinModule), '(?m)^private const val PREEMPHASIS\s*=')) {
+        Replace-Required $kotlinModule '(?m)^(private const val MAX_STREAMING_THRESHOLD\s*=\s*1\.0f\s*)$' "`$1`nprivate const val PREEMPHASIS = 0.97f"
+    }
+    $kotlinContent = [System.IO.File]::ReadAllText($kotlinModule)
+    if ([regex]::IsMatch($kotlinContent, 'val value = audio\[audioIndex\] \* window\[sample\]')) {
+        Replace-Required $kotlinModule 'val value = audio\[audioIndex\] \* window\[sample\]' 'val current = audio[audioIndex]; val previous = if (audioIndex > 0) audio[audioIndex - 1] else 0f; val value = (current - PREEMPHASIS * previous) * window[sample]'
+    } elseif (-not [regex]::IsMatch($kotlinContent, 'PREEMPHASIS \* previous')) {
+        throw "Expected Android pre-emphasis frontend was not found in file: $kotlinModule"
+    }
 
     Write-Host ""
     Write-Host "Done."

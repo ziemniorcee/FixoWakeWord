@@ -11,6 +11,8 @@ import numpy as np
 
 
 SAMPLE_RATE = 16_000
+NEGATIVE_CHUNK_SECONDS = 3
+HARD_NEGATIVE_CHUNK_SECONDS = 2
 
 
 def save_wav(path: Path, audio: np.ndarray):
@@ -25,7 +27,7 @@ def save_wav(path: Path, audio: np.ndarray):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--kind", choices=["positive", "negative"], required=True)
+    parser.add_argument("--kind", choices=["positive", "negative", "hard_negative"], required=True)
     parser.add_argument("--count", type=int)
     parser.add_argument("--seconds", type=float)
     parser.add_argument("--device", type=int, help="sounddevice input device index")
@@ -37,26 +39,35 @@ def main():
 
     if args.device is not None:
         sd.default.device = (args.device, None)
-    folder = Path("data/positive_real" if args.kind == "positive" else "data/negative_real")
+    folders = {
+        "positive": Path("data/positive_real"),
+        "negative": Path("data/negative_real"),
+        "hard_negative": Path("data/hard_negative_real"),
+    }
+    folder = folders[args.kind]
     count = args.count if args.count is not None else (30 if args.kind == "positive" else 1)
-    seconds = args.seconds if args.seconds is not None else (2.0 if args.kind == "positive" else 60.0)
+    seconds = args.seconds if args.seconds is not None else (60.0 if args.kind == "negative" else 2.0)
     start_index = len(list(folder.glob("*.wav")))
     print(f"Input device: {sd.query_devices(kind='input')['name']}")
     for index in range(start_index, start_index + count):
         if args.kind == "positive":
             input(f"[{index - start_index + 1}/{count}] Press Enter, then say 'Fikso'...")
+        elif args.kind == "hard_negative":
+            input(f"Press Enter, then say similar false-trigger phrases without saying 'Fikso' for {seconds:.0f} seconds...")
         else:
             input(f"Press Enter, then speak normally without saying 'Fikso' for {seconds:.0f} seconds...")
         print("Recording...")
         audio = sd.rec(round(seconds * SAMPLE_RATE), samplerate=SAMPLE_RATE, channels=1, dtype="float32")
         sd.wait()
-        if args.kind == "negative":
-            chunk_samples = 3 * SAMPLE_RATE
+        if args.kind != "positive":
+            chunk_seconds = HARD_NEGATIVE_CHUNK_SECONDS if args.kind == "hard_negative" else NEGATIVE_CHUNK_SECONDS
+            chunk_samples = chunk_seconds * SAMPLE_RATE
             for chunk_index, start in enumerate(range(0, len(audio), chunk_samples)):
                 chunk = audio[start : start + chunk_samples, 0]
                 if len(chunk) < SAMPLE_RATE:
                     continue
-                path = folder / f"{args.kind}_real_{index:04d}_{chunk_index:03d}.wav"
+                prefix = "hard_negative_real" if args.kind == "hard_negative" else "negative_real"
+                path = folder / f"{prefix}_{index:04d}_{chunk_index:03d}.wav"
                 save_wav(path, chunk)
                 print(f"Saved {path}")
         else:

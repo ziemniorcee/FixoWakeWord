@@ -4,17 +4,20 @@ Small end-to-end keyword spotting project for the Polish wake word **"Fikso"**. 
 
 ## Data
 
-The included `data/` directory contains 800 mono PCM WAV files at 16 kHz:
+The training data lives in these folders:
 
 | Class | Files | Duration | Meaning |
 |---|---:|---:|---|
-| `positive_ai` | 300 | 5.34 min | "Fikso" alone or in a short phrase |
-| `hard_negative_ai` | 300 | 4.26 min | Similar words such as "fiks", "fiko", "fizjo" |
-| `normal_negative_ai` | 200 | 4.50 min | Polish phrases without the wake word |
+| `positive_real` | real recordings | varies | "Fikso" from microphones/tablet |
+| `positive_ai_augmented` | generated recordings | varies | synthetic "Fikso" embedded in silence or real negative background |
+| `negative_real` | real recordings | varies | speech, room audio and other audio without the wake word |
+| `hard_negative_real` | real recordings | varies | similar-sounding words and false-trigger phrases without the wake word |
 
-The current data is synthetic speech generated with ElevenLabs voices. This makes the repository immediately reproducible, but it is not a substitute for the assignment target of 100+ recordings per team member and 30 minutes of real background audio. Before the final presentation, add real recordings to the same folders and report results separately for synthetic and real held-out data.
+`augment_positive_ai.py` creates `positive_ai_augmented` from standalone `data/positive_ai` clips. It keeps only the word "Fikso", adds 100-500 ms of silence or real negative background before and after it, applies a small random position offset, random gain, light reverb and background sampled from real negatives.
 
-`train.py` discovers WAV files directly instead of trusting manifests. This matters because an interrupted generation run left `data/hard_negative_ai/manifest.csv` incomplete.
+`train.py` uses `positive_ai_augmented` as additional positive wake-word examples. Other synthetic `*_ai` folders are still reserved for demos or stress benchmarks and are not part of model training.
+
+`train.py` discovers WAV files directly instead of trusting manifests.
 
 ## Architecture
 
@@ -44,7 +47,7 @@ python benchmark.py
 python demo.py
 ```
 
-The microphone demo starts with the conservative `strict` preset because the initial checkpoint only saw synthetic voices:
+The microphone demo can be run with stricter or more sensitive presets depending on the current checkpoint:
 
 ```powershell
 python demo.py --preset strict
@@ -57,12 +60,14 @@ If `strict` misses the wake word, collect real microphone samples and retrain:
 ```powershell
 python record_samples.py --kind positive --count 50
 python record_samples.py --kind negative --seconds 120
+python record_samples.py --kind hard_negative --count 30
+python augment_positive_ai.py
 python train.py
 python calibrate.py
 python demo.py
 ```
 
-For negative recording, speak normally without saying "Fikso", play room audio or TV audio, and include the phrases that incorrectly triggered the detector. Real WAV files are added to optional `data/positive_real/` and `data/negative_real/` folders automatically discovered by `train.py`.
+For negative recording, speak normally without saying "Fikso", play room audio or TV audio, and include the phrases that incorrectly triggered the detector. WAV files are added to `data/positive_real/`, `data/negative_real/` and `data/hard_negative_real/`; `augment_positive_ai.py` uses the real negative folders as background for `data/positive_ai_augmented/`.
 
 ### Recording samples on an Android tablet over USB
 
@@ -72,7 +77,7 @@ Connect one tablet with USB debugging enabled and run:
 .\start_tablet_recorder.ps1
 ```
 
-The script uses `adb reverse`, opens `http://localhost:8765` on the tablet and starts a local collection server. Accept microphone access in the tablet browser when prompted. Positive recordings are saved as two-second WAV files in `data/positive_real/`. Longer negative recordings are split into three-second WAV files in `data/negative_real/`. All files arrive directly on the computer and are ready for `python train.py`.
+The script uses `adb reverse`, opens `http://localhost:8765` on the tablet and starts a local collection server. Accept microphone access in the tablet browser when prompted. Positive and hard-negative recordings default to two-second WAV files in `data/positive_real/` and `data/hard_negative_real/`. Longer negative recordings are split into three-second WAV files in `data/negative_real/`. All files arrive directly on the computer and are ready for `python train.py`.
 
 Stop the foreground server with `Ctrl+C`. If it was started in the background, use:
 
@@ -87,13 +92,11 @@ adb reverse tcp:8765 tcp:8765
 python tablet_recorder.py
 ```
 
-`train.py` repeats real microphone training clips four times by default so the synthetic TTS baseline does not dominate them. Change this with `--real-repeat`.
-
 Do not record all real data in one sitting. A useful minimum is:
 
 - three separate positive sessions of 50-100 examples, recorded at different times and distances;
 - three separate 10-minute negative sessions: normal speech, TV/music and quiet room or keyboard noise;
-- one extra negative session containing phrases that caused false detections during the live demo;
+- one extra hard-negative session containing phrases that caused false detections during the live demo;
 - `python calibrate.py` after every retraining run to save streaming settings into the checkpoint.
 
 `python calibrate.py --min-recall 0.50` creates a stricter demo setting when false alarms matter more than missed wake words.
@@ -112,7 +115,7 @@ To verify streaming without a microphone:
 python demo.py --file data\positive_ai\positive_00000.wav --verbose
 ```
 
-The trained checkpoint is written to `checkpoints/fikso_cnn.pt` and metrics to `results/`. Training uses a fixed seed and stratified 70/15/15 splits for the three source folders.
+The trained checkpoint is written to `checkpoints/fikso_cnn.pt` and metrics to `results/`. Training uses a fixed seed and stratified 70/15/15 splits for the positive real, augmented positive AI, negative and hard-negative folders.
 
 `python benchmark.py` measures background-like negatives, inserting one second of silence between the available short TTS clips. Run the intentionally harder phonetic stress test separately:
 
