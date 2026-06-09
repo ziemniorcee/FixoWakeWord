@@ -1,385 +1,405 @@
 {
   "seed": 42,
-  "training_seconds": 231.01,
+  "training_seconds": 347.71,
   "files": {
-    "all": 3267,
-    "train": 2287,
-    "validation": 490,
-    "test": 490,
+    "all": 5762,
+    "train": 4032,
+    "validation": 865,
+    "test": 865,
     "groups": {
-      "hard_negative_real": 113,
-      "negative_real": 1836,
+      "hard_negative_real": 132,
+      "negative_real": 4225,
       "positive_ai_augmented": 405,
-      "positive_real": 913
+      "positive_real": 1000
     }
   },
   "validation": {
-    "threshold": 0.42,
-    "accuracy": 0.8959,
-    "precision": 0.8517,
-    "recall": 0.899,
-    "f1": 0.8747,
-    "tp": 178,
-    "fp": 31,
-    "fn": 20,
-    "tn": 261
+    "threshold": 0.83,
+    "accuracy": 0.9225,
+    "precision": 0.8529,
+    "recall": 0.8246,
+    "f1": 0.8386,
+    "tp": 174,
+    "fp": 30,
+    "fn": 37,
+    "tn": 624
   },
   "test": {
-    "threshold": 0.42,
-    "accuracy": 0.8592,
-    "precision": 0.8,
-    "recall": 0.8687,
-    "f1": 0.8329,
-    "tp": 172,
-    "fp": 43,
-    "fn": 26,
-    "tn": 249
+    "threshold": 0.83,
+    "accuracy": 0.9156,
+    "precision": 0.875,
+    "recall": 0.763,
+    "f1": 0.8152,
+    "tp": 161,
+    "fp": 23,
+    "fn": 50,
+    "tn": 631
   },
   "test_errors": [
     {
       "path": "data\\hard_negative_real\\hard_negative_real_0026_000.wav",
       "label": 0,
-      "probability": 0.7057
+      "probability": 0.9227
     },
     {
-      "path": "data\\hard_negative_real\\hard_negative_real_0021_000.wav",
+      "path": "data\\hard_negative_real\\hard_negative_real_0001_000.wav",
       "label": 0,
-      "probability": 0.6561
+      "probability": 0.9738
     },
     {
-      "path": "data\\hard_negative_real\\hard_negative_real_0070_000.wav",
+      "path": "data\\hard_negative_real\\hard_negative_real_0122_000.wav",
       "label": 0,
-      "probability": 0.9291
+      "probability": 0.8966
     },
     {
-      "path": "data\\hard_negative_real\\hard_negative_real_0009_000.wav",
+      "path": "data\\hard_negative_real\\hard_negative_real_0087_000.wav",
       "label": 0,
-      "probability": 0.6033
+      "probability": 0.9285
     },
     {
-      "path": "data\\hard_negative_real\\hard_negative_real_0089_000.wav",
+      "path": "data\\hard_negative_real\\hard_negative_real_0007_000.wav",
       "label": 0,
-      "probability": 0.7496
+      "probability": 0.9776
     },
     {
-      "path": "data\\hard_negative_real\\hard_negative_real_0107_000.wav",
+      "path": "data\\hard_negative_real\\hard_negative_real_0030_000.wav",
       "label": 0,
-      "probability": 0.5009
+      "probability": 0.862
     },
     {
-      "path": "data\\hard_negative_real\\hard_negative_real_0090_000.wav",
+      "path": "data\\negative_real\\negative_real_2147_002.wav",
       "label": 0,
-      "probability": 0.5457
+      "probability": 0.9871
     },
     {
-      "path": "data\\hard_negative_real\\hard_negative_real_0062_000.wav",
+      "path": "data\\negative_real\\negative_real_0446_016.wav",
       "label": 0,
-      "probability": 0.8888
+      "probability": 0.8765
     },
     {
-      "path": "data\\hard_negative_real\\hard_negative_real_0066_000.wav",
+      "path": "data\\negative_real\\negative_real_0471_003.wav",
       "label": 0,
-      "probability": 0.6727
+      "probability": 0.9137
     },
     {
-      "path": "data\\negative_real\\negative_real_0000_091.wav",
+      "path": "data\\negative_real\\negative_real_2191_016.wav",
       "label": 0,
-      "probability": 0.6388
+      "probability": 0.9409
     },
     {
-      "path": "data\\negative_real\\negative_real_0471_094.wav",
+      "path": "data\\negative_real\\negative_real_2185_049.wav",
       "label": 0,
-      "probability": 0.5778
+      "probability": 0.8434
     },
     {
-      "path": "data\\negative_real\\negative_real_0000_097.wav",
+      "path": "data\\negative_real\\negative_real_2183_080.wav",
       "label": 0,
-      "probability": 0.6105
+      "probability": 0.9823
     },
     {
-      "path": "data\\negative_real\\negative_real_0471_067.wav",
+      "path": "data\\negative_real\\negative_real_0200_062.wav",
       "label": 0,
-      "probability": 0.7327
+      "probability": 0.9799
     },
     {
       "path": "data\\negative_real\\negative_real_0000_182.wav",
       "label": 0,
-      "probability": 0.4316
+      "probability": 0.964
     },
     {
-      "path": "data\\negative_real\\negative_real_0000_074.wav",
+      "path": "data\\negative_real\\negative_real_2197_061.wav",
       "label": 0,
-      "probability": 0.8403
+      "probability": 0.9262
     },
     {
-      "path": "data\\negative_real\\negative_real_0444_010.wav",
+      "path": "data\\negative_real\\negative_real_1967_002.wav",
       "label": 0,
-      "probability": 0.4743
+      "probability": 0.9602
     },
     {
-      "path": "data\\negative_real\\negative_real_0444_014.wav",
+      "path": "data\\negative_real\\negative_real_0448_013.wav",
       "label": 0,
-      "probability": 0.4946
+      "probability": 0.9672
     },
     {
-      "path": "data\\negative_real\\negative_real_0461_057.wav",
+      "path": "data\\negative_real\\negative_real_2193_032.wav",
       "label": 0,
-      "probability": 0.4331
+      "probability": 0.9302
     },
     {
-      "path": "data\\negative_real\\negative_real_0435_017.wav",
+      "path": "data\\negative_real\\negative_real_0471_098.wav",
       "label": 0,
-      "probability": 0.4821
+      "probability": 0.9245
     },
     {
-      "path": "data\\negative_real\\negative_real_0400_002.wav",
+      "path": "data\\negative_real\\negative_real_0473_089.wav",
       "label": 0,
-      "probability": 0.8812
+      "probability": 0.839
     },
     {
-      "path": "data\\negative_real\\negative_real_0448_032.wav",
+      "path": "data\\negative_real\\negative_real_2186_033.wav",
       "label": 0,
-      "probability": 0.9077
+      "probability": 0.8659
     },
     {
-      "path": "data\\negative_real\\negative_real_0454_016.wav",
+      "path": "data\\negative_real\\negative_real_2184_062.wav",
       "label": 0,
-      "probability": 0.4325
+      "probability": 0.9553
     },
     {
-      "path": "data\\negative_real\\negative_real_0400_009.wav",
-      "label": 0,
-      "probability": 0.4383
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0468_067.wav",
+      "path": "data\\negative_real\\negative_real_2197_080.wav",
       "label": 0,
       "probability": 0.9751
     },
     {
-      "path": "data\\negative_real\\negative_real_0000_187.wav",
-      "label": 0,
-      "probability": 0.5435
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0473_087.wav",
-      "label": 0,
-      "probability": 0.7496
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0473_046.wav",
-      "label": 0,
-      "probability": 0.4448
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0470_023.wav",
-      "label": 0,
-      "probability": 0.4817
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0000_196.wav",
-      "label": 0,
-      "probability": 0.8826
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0438_000.wav",
-      "label": 0,
-      "probability": 0.751
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0468_025.wav",
-      "label": 0,
-      "probability": 0.6643
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0473_095.wav",
-      "label": 0,
-      "probability": 0.7365
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0473_055.wav",
-      "label": 0,
-      "probability": 0.6566
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0000_017.wav",
-      "label": 0,
-      "probability": 0.6633
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0468_002.wav",
-      "label": 0,
-      "probability": 0.8202
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0000_197.wav",
-      "label": 0,
-      "probability": 0.8962
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0472_029.wav",
-      "label": 0,
-      "probability": 0.5195
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0200_097.wav",
-      "label": 0,
-      "probability": 0.8939
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0200_163.wav",
-      "label": 0,
-      "probability": 0.7007
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0000_054.wav",
-      "label": 0,
-      "probability": 0.4316
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0464_014.wav",
-      "label": 0,
-      "probability": 0.5594
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0000_087.wav",
-      "label": 0,
-      "probability": 0.5597
-    },
-    {
-      "path": "data\\negative_real\\negative_real_0460_042.wav",
-      "label": 0,
-      "probability": 0.4338
-    },
-    {
-      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00257.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00065.wav",
       "label": 1,
-      "probability": 0.4126
+      "probability": 0.8165
     },
     {
-      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00201.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00122.wav",
       "label": 1,
-      "probability": 0.4155
+      "probability": 0.7892
     },
     {
-      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00296.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00094.wav",
       "label": 1,
-      "probability": 0.2732
+      "probability": 0.4666
     },
     {
-      "path": "data\\positive_real\\positive_real_0660.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00247.wav",
       "label": 1,
-      "probability": 0.1227
+      "probability": 0.7869
     },
     {
-      "path": "data\\positive_real\\positive_real_0356.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00105.wav",
       "label": 1,
-      "probability": 0.2847
+      "probability": 0.7862
     },
     {
-      "path": "data\\positive_real\\positive_real_0694.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00330.wav",
       "label": 1,
-      "probability": 0.3746
+      "probability": 0.6183
     },
     {
-      "path": "data\\positive_real\\positive_real_0797.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00347.wav",
       "label": 1,
-      "probability": 0.0349
+      "probability": 0.4788
     },
     {
-      "path": "data\\positive_real\\positive_real_0633.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00350.wav",
       "label": 1,
-      "probability": 0.1533
+      "probability": 0.7383
     },
     {
-      "path": "data\\positive_real\\positive_real_0002.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00189.wav",
       "label": 1,
-      "probability": 0.2036
+      "probability": 0.6485
     },
     {
-      "path": "data\\positive_real\\positive_real_0885.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00167.wav",
       "label": 1,
-      "probability": 0.1596
+      "probability": 0.7773
     },
     {
-      "path": "data\\positive_real\\positive_real_0624.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00110.wav",
       "label": 1,
-      "probability": 0.1924
+      "probability": 0.4368
     },
     {
-      "path": "data\\positive_real\\positive_real_0312.wav",
+      "path": "data\\positive_ai_augmented\\positive_ai_augmented_00400.wav",
       "label": 1,
-      "probability": 0.1714
+      "probability": 0.8146
     },
     {
-      "path": "data\\positive_real\\positive_real_0320.wav",
+      "path": "data\\positive_real\\positive_real_0080.wav",
       "label": 1,
-      "probability": 0.4042
+      "probability": 0.1518
     },
     {
-      "path": "data\\positive_real\\positive_real_0135.wav",
+      "path": "data\\positive_real\\positive_real_0888.wav",
       "label": 1,
-      "probability": 0.1499
+      "probability": 0.3369
     },
     {
-      "path": "data\\positive_real\\positive_real_0610.wav",
+      "path": "data\\positive_real\\positive_real_0819.wav",
       "label": 1,
-      "probability": 0.2333
+      "probability": 0.713
     },
     {
-      "path": "data\\positive_real\\positive_real_0015.wav",
+      "path": "data\\positive_real\\positive_real_0032.wav",
       "label": 1,
-      "probability": 0.3932
+      "probability": 0.7161
     },
     {
-      "path": "data\\positive_real\\positive_real_0787.wav",
+      "path": "data\\positive_real\\positive_real_0800.wav",
       "label": 1,
-      "probability": 0.2949
+      "probability": 0.6301
     },
     {
-      "path": "data\\positive_real\\positive_real_0616.wav",
+      "path": "data\\positive_real\\positive_real_0622.wav",
       "label": 1,
-      "probability": 0.0221
+      "probability": 0.5951
     },
     {
-      "path": "data\\positive_real\\positive_real_0798.wav",
+      "path": "data\\positive_real\\positive_real_0614.wav",
       "label": 1,
-      "probability": 0.3032
+      "probability": 0.5468
     },
     {
-      "path": "data\\positive_real\\positive_real_0649.wav",
+      "path": "data\\positive_real\\positive_real_0704.wav",
       "label": 1,
-      "probability": 0.3143
+      "probability": 0.6968
     },
     {
-      "path": "data\\positive_real\\positive_real_0620.wav",
+      "path": "data\\positive_real\\positive_real_0278.wav",
       "label": 1,
-      "probability": 0.2927
+      "probability": 0.0703
     },
     {
-      "path": "data\\positive_real\\positive_real_0473.wav",
+      "path": "data\\positive_real\\positive_real_0636.wav",
       "label": 1,
-      "probability": 0.3014
+      "probability": 0.4923
     },
     {
-      "path": "data\\positive_real\\positive_real_0623.wav",
+      "path": "data\\positive_real\\positive_real_0365.wav",
       "label": 1,
-      "probability": 0.3526
+      "probability": 0.1452
     },
     {
-      "path": "data\\positive_real\\positive_real_0706.wav",
+      "path": "data\\positive_real\\positive_real_0546.wav",
       "label": 1,
-      "probability": 0.2426
+      "probability": 0.7668
     },
     {
-      "path": "data\\positive_real\\positive_real_0770.wav",
+      "path": "data\\positive_real\\positive_real_0789.wav",
       "label": 1,
-      "probability": 0.2594
+      "probability": 0.04
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0802.wav",
+      "label": 1,
+      "probability": 0.1771
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0983.wav",
+      "label": 1,
+      "probability": 0.7068
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0210.wav",
+      "label": 1,
+      "probability": 0.5393
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0338.wav",
+      "label": 1,
+      "probability": 0.6757
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0794.wav",
+      "label": 1,
+      "probability": 0.0741
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0239.wav",
+      "label": 1,
+      "probability": 0.3494
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0879.wav",
+      "label": 1,
+      "probability": 0.7409
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0661.wav",
+      "label": 1,
+      "probability": 0.257
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0315.wav",
+      "label": 1,
+      "probability": 0.8133
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0076.wav",
+      "label": 1,
+      "probability": 0.2792
+    },
+    {
+      "path": "data\\positive_real\\positive_real_1000.wav",
+      "label": 1,
+      "probability": 0.0287
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0143.wav",
+      "label": 1,
+      "probability": 0.398
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0734.wav",
+      "label": 1,
+      "probability": 0.2741
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0507.wav",
+      "label": 1,
+      "probability": 0.6262
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0746.wav",
+      "label": 1,
+      "probability": 0.173
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0630.wav",
+      "label": 1,
+      "probability": 0.5592
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0456.wav",
+      "label": 1,
+      "probability": 0.8113
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0078.wav",
+      "label": 1,
+      "probability": 0.8284
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0647.wav",
+      "label": 1,
+      "probability": 0.1958
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0641.wav",
+      "label": 1,
+      "probability": 0.3906
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0672.wav",
+      "label": 1,
+      "probability": 0.7834
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0776.wav",
+      "label": 1,
+      "probability": 0.0061
     },
     {
       "path": "data\\positive_real\\positive_real_0782.wav",
       "label": 1,
-      "probability": 0.331
+      "probability": 0.5228
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0723.wav",
+      "label": 1,
+      "probability": 0.3465
+    },
+    {
+      "path": "data\\positive_real\\positive_real_0706.wav",
+      "label": 1,
+      "probability": 0.036
     }
   ]
 }
