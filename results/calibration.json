@@ -1,14 +1,14 @@
 {
   "positive_real_clips": 1000,
-  "negative_real_clips": 4357,
-  "negative_real_minutes": 213.713,
+  "negative_real_clips": 3136,
+  "negative_real_minutes": 152.763,
   "minimum_requested_recall": 0.7,
   "selected": {
-    "threshold": 0.89,
+    "threshold": 0.915,
     "required_hits": 2,
-    "streaming_recall": 0.713,
-    "false_alarms": 345,
-    "false_alarms_per_hour": 96.859
+    "streaming_recall": 0.708,
+    "false_alarms": 50,
+    "false_alarms_per_hour": 19.638
   },
   "warning": null
 }

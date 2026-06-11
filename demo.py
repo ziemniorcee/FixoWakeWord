@@ -15,9 +15,9 @@ from wakeword import DetectionSmoother, fit_window, iter_stream_windows, load_ch
 
 MIN_ACTIVE_RMS = 1e-4
 PRESETS = {
-    "strict": (0.98, 3),
-    "balanced": (0.90, 2),
-    "sensitive": (0.80, 2),
+    "strict": (0.99, 4),
+    "balanced": (0.98, 3),
+    "sensitive": (0.93, 3),
 }
 
 

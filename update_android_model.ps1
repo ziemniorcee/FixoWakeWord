@@ -1,8 +1,13 @@
 param(
     [string]$ClientPath = "C:\Dev\untitled\service-assistant\client",
     [double]$MinRecall = 0.70,
+    [double]$MinimumStreamingThreshold = 0.0,
+    [int]$MinimumStreamingRequiredHits = 1,
+    [double]$HardNegativeMiningThreshold = 0.60,
+    [int]$MaxMinedHardNegatives = 500,
     [int]$Epochs = 24,
-    [switch]$SkipTraining
+    [switch]$SkipTraining,
+    [switch]$SkipHardNegativeMining
 )
 
 $ErrorActionPreference = "Stop"
@@ -82,6 +87,12 @@ function Replace-Required {
 Push-Location $trainingRoot
 try {
     if (-not $SkipTraining) {
+        if ((Test-Path $checkpoint) -and (-not $SkipHardNegativeMining)) {
+            Write-Host "==> Mining hard negatives"
+            $miningThresholdText = $HardNegativeMiningThreshold.ToString("0.###", [System.Globalization.CultureInfo]::InvariantCulture)
+            Invoke-Python "mine_hard_negatives.py" "--threshold" $miningThresholdText "--max-samples" "$MaxMinedHardNegatives"
+        }
+
         Write-Host "==> Training model"
         Invoke-Python "train.py" "--epochs" "$Epochs"
     } elseif (-not (Test-Path $checkpoint)) {
@@ -90,7 +101,8 @@ try {
 
     Write-Host "==> Calibrating streaming settings"
     $minRecallText = $MinRecall.ToString("0.###", [System.Globalization.CultureInfo]::InvariantCulture)
-    Invoke-Python "calibrate.py" "--min-recall" $minRecallText
+    $minimumThresholdText = $MinimumStreamingThreshold.ToString("0.###", [System.Globalization.CultureInfo]::InvariantCulture)
+    Invoke-Python "calibrate.py" "--min-recall" $minRecallText "--minimum-threshold" $minimumThresholdText "--minimum-required-hits" "$MinimumStreamingRequiredHits"
 
     $calibrationResult = Get-Content $calibration -Raw | ConvertFrom-Json
     $threshold = [double]$calibrationResult.selected.threshold

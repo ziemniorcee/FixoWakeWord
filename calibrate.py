@@ -25,12 +25,27 @@ def count_detections(scores, threshold, required_hits, hop_seconds):
     return sum(head.update((index + 1) * hop_seconds, score) for index, score in enumerate(scores))
 
 
+def summarize_candidate(positive_scores, negative_scores, negative_hours, threshold, required_hits, hop_seconds):
+    detected = sum(count_detections(scores, threshold, required_hits, hop_seconds) > 0 for scores in positive_scores)
+    recall = detected / len(positive_scores)
+    false_alarms = count_detections(negative_scores, threshold, required_hits, hop_seconds)
+    return {
+        "threshold": round(float(threshold), 3),
+        "required_hits": required_hits,
+        "streaming_recall": round(recall, 4),
+        "false_alarms": false_alarms,
+        "false_alarms_per_hour": round(false_alarms / max(negative_hours, 1e-9), 3),
+    }
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
     parser.add_argument("--checkpoint", type=Path, default=Path("checkpoints/fikso_cnn.pt"))
     parser.add_argument("--output", type=Path, default=Path("results/calibration.json"))
     parser.add_argument("--min-recall", type=float, default=0.70)
+    parser.add_argument("--minimum-threshold", type=float, default=0.0)
+    parser.add_argument("--minimum-required-hits", type=int, default=1)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
     model, checkpoint = load_checkpoint(args.checkpoint, args.device)
@@ -52,18 +67,20 @@ def main():
     candidates = []
     for required_hits in (2, 3, 4):
         for threshold in np.linspace(0.50, 0.995, 100):
-            detected = sum(count_detections(scores, threshold, required_hits, model.config.hop_seconds) > 0 for scores in positive_scores)
-            recall = detected / len(positive_scores)
-            false_alarms = count_detections(negative_scores, threshold, required_hits, model.config.hop_seconds)
-            candidates.append({
-                "threshold": round(float(threshold), 3),
-                "required_hits": required_hits,
-                "streaming_recall": round(recall, 4),
-                "false_alarms": false_alarms,
-                "false_alarms_per_hour": round(false_alarms / max(negative_hours, 1e-9), 3),
-            })
-    eligible = [row for row in candidates if row["streaming_recall"] >= args.min_recall]
-    best = min(eligible or candidates, key=lambda row: (row["false_alarms_per_hour"], -row["streaming_recall"], row["threshold"]))
+            candidates.append(summarize_candidate(
+                positive_scores,
+                negative_scores,
+                negative_hours,
+                threshold,
+                required_hits,
+                model.config.hop_seconds,
+            ))
+    constrained = [
+        row for row in candidates
+        if row["threshold"] >= args.minimum_threshold and row["required_hits"] >= args.minimum_required_hits
+    ]
+    eligible = [row for row in constrained if row["streaming_recall"] >= args.min_recall]
+    best = min(eligible or constrained or candidates, key=lambda row: (row["false_alarms_per_hour"], -row["streaming_recall"], row["threshold"]))
     checkpoint["streaming_threshold"] = best["threshold"]
     checkpoint["streaming_required_hits"] = best["required_hits"]
     torch.save(checkpoint, args.checkpoint)
@@ -73,7 +90,7 @@ def main():
         "negative_real_minutes": round(negative_hours * 60.0, 3),
         "minimum_requested_recall": args.min_recall,
         "selected": best,
-        "warning": None if eligible else "No candidate reached the requested recall; more varied real training data is needed.",
+        "warning": None if eligible else "No candidate reached the requested recall with the requested constraints; lower constraints or improve the model/data.",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2), encoding="utf-8")

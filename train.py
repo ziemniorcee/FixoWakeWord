@@ -15,6 +15,8 @@ from torch.utils.data import DataLoader, Dataset
 
 from wakeword import AudioConfig, WakeWordCNN, fit_window, load_wav
 
+POSITIVE_AI_BACKGROUND_SNR_DB = (16.0, 30.0)
+
 
 def rms(audio: np.ndarray) -> float:
     return float(np.sqrt(np.mean(np.square(audio)) + 1e-9))
@@ -30,7 +32,7 @@ def mix_background(window: np.ndarray, background: np.ndarray, rng: np.random.Ge
     bed_rms = rms(bed)
     if bed_rms <= 1e-6:
         return window
-    snr_db = float(rng.uniform(0.0, 20.0))
+    snr_db = float(rng.uniform(*POSITIVE_AI_BACKGROUND_SNR_DB))
     target_bed_rms = signal_rms / (10 ** (snr_db / 20.0))
     return np.clip(window + bed * (target_bed_rms / bed_rms), -1.0, 1.0)
 
@@ -50,7 +52,7 @@ def apply_light_reverb(audio: np.ndarray, sample_rate: int, rng: np.random.Gener
 
 def discover_files(data_dir: Path) -> list[tuple[Path, int, str]]:
     required_groups = [("positive_real", 1), ("negative_real", 0)]
-    optional_groups = [("positive_ai_augmented", 1), ("hard_negative_real", 0)]
+    optional_groups = [("positive_ai", 1), ("positive_ai_augmented", 1), ("hard_negative_real", 0), ("hard_negative_mined", 0)]
     files = []
     for folder, label in required_groups:
         paths = sorted((data_dir / folder).glob("*.wav"))
@@ -79,8 +81,8 @@ def stratified_split(files: list[tuple[Path, int, str]], seed: int):
 
 class AudioDataset(Dataset):
     def __init__(self, files, config: AudioConfig, training: bool, seed: int):
-        self.items = [(load_wav(path, config.sample_rate), float(label), str(path)) for path, label, _ in files]
-        self.negative_audio = [audio for audio, label, _ in self.items if label == 0]
+        self.items = [(load_wav(path, config.sample_rate), float(label), str(path), group) for path, label, group in files]
+        self.negative_audio = [audio for audio, label, _, _ in self.items if label == 0]
         self.config = config
         self.training = training
         self.seed = seed
@@ -90,7 +92,7 @@ class AudioDataset(Dataset):
         return len(self.items)
 
     def __getitem__(self, index):
-        audio, label, path = self.items[index]
+        audio, label, path, group = self.items[index]
         rng = self.rng if self.training else np.random.default_rng(self.seed + index)
         if label == 0:
             window = np.zeros(self.config.window_samples, dtype=np.float32)
@@ -103,7 +105,7 @@ class AudioDataset(Dataset):
             window = np.clip(window, -1.0, 1.0)
         else:
             window = fit_window(audio, self.config.window_samples, rng if self.training else None)
-            if self.training and self.negative_audio and rng.random() < 0.75:
+            if self.training and group == "positive_ai" and self.negative_audio and rng.random() < 0.75:
                 background = self.negative_audio[int(rng.integers(len(self.negative_audio)))]
                 window = mix_background(window, background, rng)
             if self.training and rng.random() < 0.40:
